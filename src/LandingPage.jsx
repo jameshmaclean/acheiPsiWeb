@@ -89,6 +89,7 @@ export default function LandingPage() {
           style={styles.logo}
           width={120}
           height={80}
+          onError={(e) => { e.target.onerror = null; e.target.src = "/assets/app_logo_header.png"; }}
         />
         <span style={{ fontSize: 36, fontWeight: "bold", letterSpacing: 1 }}>
           AcheiPsi
@@ -120,8 +121,18 @@ export default function LandingPage() {
             aria-label="Baixe o app na Play Store (abre em nova aba)"
             style={{ display: "inline-block", width: "100%", maxWidth: 320 }}
           >
-            <button style={styles.button} tabIndex={0}>
-              Baixe o app na Play Store
+            <button
+              style={{
+                ...styles.button,
+                background: "#bdbdbd",
+                color: "#fff",
+                cursor: "not-allowed",
+                opacity: 0.7,
+              }}
+              tabIndex={0}
+              disabled
+            >
+              Baixe o app na Play Store (em breve)
             </button>
           </a>
         </section>
