@@ -83,7 +83,7 @@ export default function LandingPage() {
       <header style={styles.header}>
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
           <img
-            src="./assets/app_logo_header.png"
+            src="/assets/app_logo_header.png"
             alt="Logo AcheiPsi"
             style={styles.logo}
             width={100}
@@ -152,7 +152,7 @@ export default function LandingPage() {
             O app ainda não está disponível na Play Store, mas você pode instalar a versão APK diretamente no seu celular Android.
           </p>
           <a
-            href="https://seulink.com/acheipsi.apk"
+            href="/acheipsi.apk"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Baixar APK do AcheiPsi (abre em nova aba)"
