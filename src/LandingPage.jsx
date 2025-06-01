@@ -152,7 +152,7 @@ export default function LandingPage() {
             O app ainda não está disponível na Play Store, mas você pode instalar a versão APK diretamente no seu celular Android.
           </p>
           <a
-            href="https://github.com/jameshmaclean/acheiPsiWeb/releases/download/v1.0.0/acheipsi.apk"
+            href="./acheipsi.apk"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Baixar APK do AcheiPsi (abre em nova aba)"
