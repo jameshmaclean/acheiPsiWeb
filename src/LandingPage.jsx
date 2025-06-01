@@ -33,10 +33,8 @@ const styles = {
     boxSizing: "border-box",
   },
   logo: {
-    width: 120,
-    height: 80,
+    width: 100,
     borderRadius: 24,
-    marginBottom: 16,
     objectFit: "contain",
     marginRight: 16,
   },
@@ -83,17 +81,18 @@ export default function LandingPage() {
   return (
     <div style={styles.body}>
       <header style={styles.header}>
-        <img
-          src="/src/assets/app_logo_header.png"
-          alt="Logo AcheiPsi"
-          style={styles.logo}
-          width={120}
-          height={80}
-          onError={(e) => { e.target.onerror = null; e.target.src = "/assets/app_logo_header.png"; }}
-        />
-        <span style={{ fontSize: 36, fontWeight: "bold", letterSpacing: 1 }}>
-          AcheiPsi
-        </span>
+        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+          <img
+            src="./assets/app_logo_header.png"
+            alt="Logo AcheiPsi"
+            style={styles.logo}
+            width={100}
+            height={80}
+          />
+          <span style={{ fontSize: 36, fontWeight: "bold", letterSpacing: 1, lineHeight: 1 }}>
+            AcheiPsi
+          </span>
+        </div>
       </header>
       <main style={{ width: "100%", display: "flex", flexDirection: "column", alignItems: "center", flex: 1 }}>
         <section style={styles.section} aria-labelledby="acheipsi-title">
